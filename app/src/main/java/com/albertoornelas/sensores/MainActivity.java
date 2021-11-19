@@ -7,6 +7,7 @@ import android.hardware.Sensor;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.widget.TextView;
+
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
