@@ -12,25 +12,9 @@ package com.albertoornelas.sensores;
 
 public class MainActivity extends AppCompatActivity {
 
-    // Variables
-    private SensorManager sensorManager;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
-
-        List<Sensor> sensorList = sensorManager.getSensorList(Sensor.TYPE_ALL);
-        StringBuilder sensorText = new StringBuilder();
-
-        for (Sensor currentSensor : sensorList){
-            sensorText.append(currentSensor.getName()).append(System.getProperty("line.separator"));
-        }
-
-        TextView sensorTextView = findViewById(R.id.sensor_list);
-        sensorTextView.setText(sensorText);
-
     }
 }
